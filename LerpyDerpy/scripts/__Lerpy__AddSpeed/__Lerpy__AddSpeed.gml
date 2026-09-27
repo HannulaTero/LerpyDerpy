@@ -2,14 +2,14 @@
 
 
 /**
-* Adds offset to momentum.
+* Adds offset to speed.
 * 
 * @context Lerpy
 * @param {Real} _offset
 * @returns {Struct.Lerp}
 */
-function __Lerpy__AddMomentum(_offset=0)
+function __Lerpy__AddSpeed(_offset=0)
 {
-  self.momentum += _offset;
+  self.speed += _offset;
   return self;
 }

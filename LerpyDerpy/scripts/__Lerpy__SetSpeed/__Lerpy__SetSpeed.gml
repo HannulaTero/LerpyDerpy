@@ -8,8 +8,8 @@
 * @param {Real} _offset
 * @returns {Struct.Lerp}
 */
-function __Lerpy__SetMomentum(_offset=0)
+function __Lerpy__SetSpeed(_offset=0)
 {
-  self.momentum = _offset;
+  self.speed = _offset;
   return self;
 }

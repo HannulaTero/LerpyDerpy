@@ -2,12 +2,9 @@
 
 enum LerpyDerpyField
 {
-  BOUND,
+  SCOPE,
   FIELD,
-  CURRENT,
   TARGET,
-  MOMENTUM,
-  DAMPENING,
-  ACCELERATION,
+  SPEED,
   length
 };

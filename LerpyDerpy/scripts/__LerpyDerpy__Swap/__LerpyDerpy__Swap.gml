@@ -2,13 +2,12 @@
 
 /**
 * Swaps two lerper data locations within the.
-* Towards to the user, this shouldn't do anything.
+* Towards to the user, this shouldn't practically do anything.
 * 
 * @context LerpyDerpy
 * @param {Real} _lhsMappingIndex
 * @param {Real} _rhsMappingIndex
 * @returns {Struct.LerpyDerpy}
-* @ignore
 */ 
 function __LerpyDerpy__Swap(_lhsMappingIndex, _rhsMappingIndex)
 {
