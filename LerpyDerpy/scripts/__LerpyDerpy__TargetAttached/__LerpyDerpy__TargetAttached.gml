@@ -3,8 +3,12 @@
 
 /**
 * Updates the lerper targets with their attached scope and key.
+* 
 * In the "Update"-method lerpers change values inside scope[$ key],
 * but here lerper targets are updated into scope[$ key].
+* 
+* In short, set the values just before
+* "TargetAttached()" and "Update()" 
 * 
 * @context LerpyDerpy
 * @param {Real} _delta
@@ -25,6 +29,7 @@ function __LerpyDerpy__TargetAttached()
     var _scope = _data[LerpyDerpyField.SCOPE];
     var _field = _data[LerpyDerpyField.FIELD];
     _data[LerpyDerpyField.TARGET] = struct_get_from_hash(_scope, _field);
+    struct_set_from_hash(_scope, _field, _data[LerpyDerpyField.CURRENT]);
   }
   
   

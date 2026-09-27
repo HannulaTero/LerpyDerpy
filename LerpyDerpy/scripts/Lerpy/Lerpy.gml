@@ -8,7 +8,7 @@
 * @param {Real} _dampening
 * @param {Real} _acceleration
 */ 
-function Lerpy(_value=0, _dampening=0.75, _acceleration=8.0)
+function Lerpy(_value=0, _dampening=0.75, _acceleration=8.0) constructor
 {
   //=============================================================
   // 

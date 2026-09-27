@@ -26,21 +26,22 @@ function __LerpyDerpy__Update(_delta=undefined)
   for(var i = 0; i < _count; i++)
   {
     // Get the target data.
-    var _data   = _dataVector[i];
-    var _scope  = _data[LerpyDerpyField.SCOPE];
-    var _field  = _data[LerpyDerpyField.FIELD];
-    var _target = _data[LerpyDerpyField.TARGET];
-    var _speed  = _data[LerpyDerpyField.SPEED];
+    var _data     = _dataVector[i];
+    var _scope    = _data[LerpyDerpyField.SCOPE];
+    var _field    = _data[LerpyDerpyField.FIELD];
+    var _target   = _data[LerpyDerpyField.TARGET];
+    var _current  = _data[LerpyDerpyField.CURRENT];
+    var _speed    = _data[LerpyDerpyField.SPEED];
     
     // Calculate the speed.
-    var _current  = struct_get_from_hash(_scope, _field);
     var _updated  = (_current + _speed);
     var _force    = (_target - _current);
     _speed += _acceleration * _force * _delta;
     _speed *= _dampening;
     
     // Store the updated values.
-    _data[LerpyDerpyField.SPEED] = _speed;
+    _data[LerpyDerpyField.SPEED]    = _speed;
+    _data[LerpyDerpyField.CURRENT]  = _updated;
     struct_set_from_hash(_scope, _field, _updated);
   }
   

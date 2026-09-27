@@ -1,9 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"OBJ_LerpyDerpyExample",
-  "eventList":[],
+  "%Name":"OBJ_LerpyDerpyExample_00_Lerpy",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"OBJ_LerpyDerpyExample",
+  "name":"OBJ_LerpyDerpyExample_00_Lerpy",
   "overriddenProperties":[],
   "parent":{
     "name":"LerpyDerpy x Examples",
@@ -27,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"SPR_LerpyDerpyExample",
+    "path":"sprites/SPR_LerpyDerpyExample/SPR_LerpyDerpyExample.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

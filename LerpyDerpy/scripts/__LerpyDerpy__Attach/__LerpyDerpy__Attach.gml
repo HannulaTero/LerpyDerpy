@@ -31,11 +31,14 @@ function __LerpyDerpy__Attach(_scope, _key)
   
   // Initialize with default values.
   // Updates the scope and field.
-  var _data = _dataVector[_newIndex];
-  _data[LerpyDerpyField.SCOPE]  = _scope;
-  _data[LerpyDerpyField.FIELD]  = variable_get_hash(_key);
-  _data[LerpyDerpyField.TARGET] = struct_get_from_hash(_scope, _key);
-  _data[LerpyDerpyField.SPEED]  = 0.0;
+  var _data   = _dataVector[_newIndex];
+  var _hash   = variable_get_hash(_key);
+  var _value  = struct_get_from_hash(_scope, _hash);
+  _data[LerpyDerpyField.SCOPE]    = _scope;
+  _data[LerpyDerpyField.FIELD]    = _hash;
+  _data[LerpyDerpyField.CURRENT]  = _value;
+  _data[LerpyDerpyField.TARGET]   = _value;
+  _data[LerpyDerpyField.SPEED]    = 0.0;
 
   
   return _newIndex;
