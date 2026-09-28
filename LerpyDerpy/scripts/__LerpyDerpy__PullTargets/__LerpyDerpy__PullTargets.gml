@@ -2,14 +2,8 @@
 
 
 /**
-* Updates the lerper targets with their attached scope and key.
-* As in pulls current values to be the target values.
-* 
-* In the "Update"-method lerpers change values inside scope[$ key],
-* but here lerper targets are updated into scope[$ key].
-* 
-* In short, set the values just before
-* "PullTargets()" and "Update()" 
+* Updates the values in attached scope and key to be their target values.
+* As in pulls target-values to be current-values in attached fields.
 * 
 * @context LerpyDerpy
 * @param {Real} _delta
@@ -23,15 +17,12 @@ function __LerpyDerpy__PullTargets()
   var _count = array_length(_dataVector);
   
   
-  // Update each lerper.
+  // Update each attached field with current target-value.
   for(var i = 0; i < _count; i++)
   {
     var _data  = _dataVector[i];
-    var _scope = _data[LerpyDerpyItem.SCOPE];
-    var _field = _data[LerpyDerpyItem.HASH];
-    _data[LerpyDerpyItem.TARGET] = struct_get_from_hash(_scope, _field);
-    struct_set_from_hash(_scope, _field, _data[LerpyDerpyItem.CURRENT]);
-  }
+    struct_set_from_hash(_data.scope, _data.hash, _data.target);
+  } 
   
   
   return self;

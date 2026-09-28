@@ -1,8 +1,10 @@
 /// @desc
 
-image_blend = make_color_hsv(0, 0, 255);
+image_blend = make_color_hsv(0, 0, 192);
+image_xscale = random_range(1.5, 2.0);
+image_yscale = image_xscale;
 
-alarm[0] = 60;
+alarm[0] = irandom_range(30, 180);
 
 
 // Create group of lerpers.

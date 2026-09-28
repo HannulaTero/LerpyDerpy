@@ -8,6 +8,7 @@
 * @param {Real} _lhsMappingIndex
 * @param {Real} _rhsMappingIndex
 * @returns {Struct.LerpyDerpy}
+* @ignore
 */ 
 function __LerpyDerpy__IndexSwap(_lhsMappingIndex, _rhsMappingIndex)
 {
@@ -24,9 +25,10 @@ function __LerpyDerpy__IndexSwap(_lhsMappingIndex, _rhsMappingIndex)
   
   
   // Swap the locations of the data.
-  var _temporal = _dataVector[_lhsDataIndex];
-  _dataVector[_lhsDataIndex] = _dataVector[_rhsDataIndex];
-  _dataVector[_rhsDataIndex] = _temporal;
+  var _lhsData = _dataVector[_lhsDataIndex];
+  var _rhsData = _dataVector[_lhsDataIndex];
+  _dataVector[_lhsDataIndex] = _rhsData;
+  _dataVector[_rhsDataIndex] = _lhsData;
   
   
   // Swap the inverse mapping.
@@ -37,6 +39,11 @@ function __LerpyDerpy__IndexSwap(_lhsMappingIndex, _rhsMappingIndex)
   // Swap the index mapping.
   _mappingIndexes[_lhsMappingIndex] = _rhsDataIndex;
   _mappingIndexes[_rhsMappingIndex] = _lhsDataIndex;
+  
+  
+  // Update the field-mapping.
+  self.mappingFields[$ _lhsData.fieldKey] = _rhsMappingIndex;
+  self.mappingFields[$ _rhsData.fieldKey] = _lhsMappingIndex;
   
   
   return self;

@@ -5,6 +5,8 @@
 * These lerpers are created by attaching a scope and key to container,
 * so these update automatically the value inside the attached field.
 * 
+* All lerpers share same acceleration and dampening.
+* 
 * The data handling is inspired by: 
 * https://www.youtube.com/watch?v=L4xOCvELWlU
 */ 
@@ -18,8 +20,10 @@ function LerpyDerpy() constructor
   // Container handling.
   static Attach           = __LerpyDerpy__Attach;
   static Clear            = __LerpyDerpy__Clear;
-  static PullTargets      = __LerpyDerpy__PullTargets;
-  static PushTargets      = __LerpyDerpy__PushTargets;
+  static GetIndex         = __LerpyDerpy__GetIndex;
+  static GetKey           = __LerpyDerpy__GetKey;
+  static PullTargets      = __LerpyDerpy__PullTargets; 
+  static PushTargets      = __LerpyDerpy__PushTargets; 
   static SetAcceleration  = __LerpyDerpy__SetAcceleration;
   static SetDampening     = __LerpyDerpy__SetDampening;
   static Update           = __LerpyDerpy__Update;
@@ -68,6 +72,11 @@ function LerpyDerpy() constructor
   // For given position in dataVector, what is user-index.
   // @ignore 
   self.mappingInverse = [ ];
+  
+  
+  // Mapping fields (scope & key) into user-indexes.
+  // @ignore
+  self.mappingFields = { };
   
   
   // How many lerpers are currently active.

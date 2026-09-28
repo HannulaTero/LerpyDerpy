@@ -10,7 +10,6 @@
 */ 
 function __LerpyDerpy__IndexSetTarget(_index, _target)
 {
-  var _data = self.GetData(_index);
-  _data[LerpyDerpyItem.TARGET] = _target;
+  self.IndexGetData(_index).target = _target;
   return self;
 }

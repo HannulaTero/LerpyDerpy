@@ -17,7 +17,7 @@ y = mouse_y + 64;
 
   
 // This reads given target values.
-self.lerpyDerpy.PullTargets();
+self.lerpyDerpy.PushTargets();
   
   
 // This updates the keys.

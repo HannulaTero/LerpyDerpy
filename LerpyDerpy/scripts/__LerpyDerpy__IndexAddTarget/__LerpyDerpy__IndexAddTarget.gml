@@ -10,7 +10,6 @@
 */ 
 function __LerpyDerpy__IndexAddTarget(_index, _offset)
 {
-  var _data = self.GetData(_index);
-  _data[LerpyDerpyItem.TARGET] += _offset;
+  self.IndexGetData(_index).target += _offset;
   return self;
 }

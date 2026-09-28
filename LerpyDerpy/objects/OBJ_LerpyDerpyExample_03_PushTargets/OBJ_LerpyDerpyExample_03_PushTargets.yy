@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"OBJ_LerpyDerpyExample_02_TargetAttached",
+  "%Name":"OBJ_LerpyDerpyExample_03_PushTargets",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"OBJ_LerpyDerpyExample_02_TargetAttached",
+  "name":"OBJ_LerpyDerpyExample_03_PushTargets",
   "overriddenProperties":[],
   "parent":{
     "name":"LerpyDerpy x Examples",

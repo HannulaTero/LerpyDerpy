@@ -5,14 +5,16 @@
 * which has gotten from previously attached lerper.
 * 
 * @context LerpyDerpy
-* @param {Real} _dstMappingIndex
+* @param {Real} _index
 * @returns {Struct.LerpyDerpy}
 */ 
-function __LerpyDerpy__IndexRemove(_dstMappingIndex)
+function __LerpyDerpy__IndexRemove(_index)
 {
   // Swap the mapping with the last item.
-  self.Swap(_dstMappingIndex, self.dataUsedCapacity - 1);
+  self.IndexSwap(_index, self.dataUsedCapacity - 1);
   
+  // Remove the mapping. 
+  struct_remove(self.mappingFields, self.IndexGetKey(_index));
   
   // Update the used capacity.
   self.dataUsedCapacity -= 1;

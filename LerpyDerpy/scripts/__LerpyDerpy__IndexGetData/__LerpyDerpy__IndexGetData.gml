@@ -2,7 +2,6 @@
 
 /**
 * Get lerper data for given index.
-* This returns array, indexes with Enum.LerpyDerpyItem
 * 
 * @context LerpyDerpy
 * @param {Real} _index  Lerper index from .Attach(...)  

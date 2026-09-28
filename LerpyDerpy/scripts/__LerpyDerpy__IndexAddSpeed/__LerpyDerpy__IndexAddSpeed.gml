@@ -10,7 +10,6 @@
 */ 
 function __LerpyDerpy__IndexAddSpeed(_index, _offset)
 {
-  var _data = self.GetData(_index);
-  _data[LerpyDerpyItem.SPEED] += _offset;
+  self.IndexGetData(_index).speed += _offset;
   return self;
 }
