@@ -62,8 +62,7 @@ self.lerpyDerpy.Attach(self, "y");
   
 // ALARM -EVENT.
 // Updating the target values.
-// If you want to update relatively, 
-// then you need to use .PullTargets() first.
+self.lerpyDerpy.PullTargets();
 x = choose(256, 512);
 y = choose(256, 512);
 self.lerpyDerpy.PushTargets();
