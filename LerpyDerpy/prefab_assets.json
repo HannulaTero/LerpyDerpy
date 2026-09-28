@@ -1,0 +1,117 @@
+{
+  "Version": "1.0",
+  "assets": [
+    {
+      "export": 2,
+      "name": "datafiles/license_LerpyDerpy.txt"
+    },
+    {
+      "export": 1,
+      "name": "__Lerpy__AddOffset"
+    },
+    {
+      "export": 1,
+      "name": "__Lerpy__AddSpeed"
+    },
+    {
+      "export": 1,
+      "name": "__Lerpy__AddTarget"
+    },
+    {
+      "export": 1,
+      "name": "__Lerpy__Detach"
+    },
+    {
+      "export": 1,
+      "name": "__Lerpy__Get"
+    },
+    {
+      "export": 1,
+      "name": "__Lerpy__GetTarget"
+    },
+    {
+      "export": 1,
+      "name": "__Lerpy__SetAbsolute"
+    },
+    {
+      "export": 1,
+      "name": "__Lerpy__SetAcceleration"
+    },
+    {
+      "export": 1,
+      "name": "__Lerpy__SetCurrent"
+    },
+    {
+      "export": 1,
+      "name": "__Lerpy__SetDampening"
+    },
+    {
+      "export": 1,
+      "name": "__Lerpy__SetSpeed"
+    },
+    {
+      "export": 1,
+      "name": "__Lerpy__SetTarget"
+    },
+    {
+      "export": 1,
+      "name": "__Lerpy__Update"
+    },
+    {
+      "export": 1,
+      "name": "__LerpyDerpy__Attach"
+    },
+    {
+      "export": 1,
+      "name": "__LerpyDerpy__Clear"
+    },
+    {
+      "export": 1,
+      "name": "__LerpyDerpy__Detach"
+    },
+    {
+      "export": 1,
+      "name": "__LerpyDerpy__GetIdentifier"
+    },
+    {
+      "export": 1,
+      "name": "__LerpyDerpy__GetLerpy"
+    },
+    {
+      "export": 1,
+      "name": "__LerpyDerpy__PullTargets"
+    },
+    {
+      "export": 1,
+      "name": "__LerpyDerpy__PushTargets"
+    },
+    {
+      "export": 1,
+      "name": "__LerpyDerpy__SetAcceleration"
+    },
+    {
+      "export": 1,
+      "name": "__LerpyDerpy__SetDampening"
+    },
+    {
+      "export": 1,
+      "name": "__LerpyDerpy__Update"
+    },
+    {
+      "export": 2,
+      "name": "Lerpy"
+    },
+    {
+      "export": 2,
+      "name": "LerpyDerpy"
+    },
+    {
+      "export": 1,
+      "name": "LerpyDerpy_EXPORT"
+    },
+    {
+      "export": 2,
+      "name": "NOTE_LerpyDerpy_README"
+    }
+  ]
+}
