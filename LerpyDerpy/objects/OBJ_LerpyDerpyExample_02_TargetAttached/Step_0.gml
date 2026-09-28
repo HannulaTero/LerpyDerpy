@@ -5,7 +5,7 @@
   It means that "Update" also overrides values you manually set.
   
   If you manually set values to something, 
-  and then call "TargetAttached", then lerper target values are
+  and then call "PullTargets", then lerper target values are
   set to these values. 
   
 */ 
@@ -17,7 +17,7 @@ y = mouse_y + 64;
 
   
 // This reads given target values.
-self.lerpyDerpy.TargetAttached();
+self.lerpyDerpy.PullTargets();
   
   
 // This updates the keys.

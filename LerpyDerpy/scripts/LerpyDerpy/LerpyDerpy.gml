@@ -2,8 +2,8 @@
 
 /**
 * Container of lerpers.
-* These lerpers are attached to scope and key,
-* so these update automatically the value inside the key.
+* These lerpers are created by attaching a scope and key to container,
+* so these update automatically the value inside the attached field.
 * 
 * The data handling is inspired by: 
 * https://www.youtube.com/watch?v=L4xOCvELWlU
@@ -15,19 +15,33 @@ function LerpyDerpy() constructor
   #region PUBLIC : STATIC METHODS.
   
   
-  static AddSpeed         = __LerpyDerpy__AddSpeed;
-  static AddTarget        = __LerpyDerpy__AddTarget;
+  // Container handling.
   static Attach           = __LerpyDerpy__Attach;
   static Clear            = __LerpyDerpy__Clear;
-  static GetData          = __LerpyDerpy__GetData;
-  static Remove           = __LerpyDerpy__Remove;
+  static PullTargets      = __LerpyDerpy__PullTargets;
+  static PushTargets      = __LerpyDerpy__PushTargets;
   static SetAcceleration  = __LerpyDerpy__SetAcceleration;
   static SetDampening     = __LerpyDerpy__SetDampening;
-  static SetSpeed         = __LerpyDerpy__SetSpeed;
-  static SetTarget        = __LerpyDerpy__SetTarget;
-  static Swap             = __LerpyDerpy__Swap;
-  static TargetAttached   = __LerpyDerpy__TargetAttached;
   static Update           = __LerpyDerpy__Update;
+  
+  
+  // Field-based accessing on lerpers.
+  static FieldAddSpeed  = __LerpyDerpy__FieldAddSpeed;
+  static FieldAddTarget = __LerpyDerpy__FieldAddTarget;
+  static FieldGetData   = __LerpyDerpy__FieldGetData;
+  static FieldRemove    = __LerpyDerpy__FieldRemove;
+  static FieldSetSpeed  = __LerpyDerpy__FieldSetSpeed;
+  static FieldSetTarget = __LerpyDerpy__FieldSetTarget;
+  
+  
+  // Index-based accessing on lerpers.
+  static IndexAddSpeed  = __LerpyDerpy__IndexAddSpeed;
+  static IndexAddTarget = __LerpyDerpy__IndexAddTarget;
+  static IndexGetData   = __LerpyDerpy__IndexGetData;
+  static IndexRemove    = __LerpyDerpy__IndexRemove;
+  static IndexSetSpeed  = __LerpyDerpy__IndexSetSpeed;
+  static IndexSetTarget = __LerpyDerpy__IndexSetTarget;
+  static IndexSwap      = __LerpyDerpy__IndexSwap;
   
   
   #endregion

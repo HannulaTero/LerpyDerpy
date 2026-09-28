@@ -2,7 +2,7 @@
 
 /**
 * Creates lerper with momentum.
-* This doesn't automatically read any values like LerpyDerpy.
+* This doesn't automatically read/write fields like LerpyDerpy.
 * 
 * @param {Real} _value
 * @param {Real} _dampening

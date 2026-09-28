@@ -23,7 +23,7 @@ function __LerpyDerpy__Attach(_scope, _key)
   self.dataUsedCapacity += 1;
   if (self.dataUsedCapacity > array_length(_dataVector))
   {
-    array_push(_dataVector, array_create(LerpyDerpyField.length));    
+    array_push(_dataVector, array_create(LerpyDerpyItem.length));    
     array_push(_mappingIndexes, _newIndex);
     array_push(_mappingInverse, _newIndex);
   }
@@ -34,11 +34,11 @@ function __LerpyDerpy__Attach(_scope, _key)
   var _data   = _dataVector[_newIndex];
   var _hash   = variable_get_hash(_key);
   var _value  = struct_get_from_hash(_scope, _hash);
-  _data[LerpyDerpyField.SCOPE]    = _scope;
-  _data[LerpyDerpyField.FIELD]    = _hash;
-  _data[LerpyDerpyField.CURRENT]  = _value;
-  _data[LerpyDerpyField.TARGET]   = _value;
-  _data[LerpyDerpyField.SPEED]    = 0.0;
+  _data[LerpyDerpyItem.SCOPE]   = _scope;
+  _data[LerpyDerpyItem.HASH]    = _hash;
+  _data[LerpyDerpyItem.CURRENT] = _value;
+  _data[LerpyDerpyItem.TARGET]  = _value;
+  _data[LerpyDerpyItem.SPEED]   = 0.0;
 
   
   return _newIndex;

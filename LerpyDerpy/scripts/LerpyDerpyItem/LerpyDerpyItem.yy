@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"LerpyDerpyItem",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"LerpyDerpyItem",
+  "parent":{
+    "name":"LerpyDerpy",
+    "path":"folders/LerpyDerpy.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
