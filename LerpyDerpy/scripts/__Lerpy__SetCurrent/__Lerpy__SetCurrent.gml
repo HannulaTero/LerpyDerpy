@@ -6,7 +6,7 @@
 * 
 * @context Lerpy
 * @param {Real} _current
-* @returns {Struct.Lerp}
+* @returns {Struct.Lerpy}
 */
 function __Lerpy__SetCurrent(_current)
 {

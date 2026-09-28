@@ -6,7 +6,7 @@
 * 
 * @context Lerpy
 * @param {Real} _target
-* @returns {Struct.Lerp}
+* @returns {Struct.Lerpy}
 */
 function __Lerpy__AddTarget(_target=self.target)
 {

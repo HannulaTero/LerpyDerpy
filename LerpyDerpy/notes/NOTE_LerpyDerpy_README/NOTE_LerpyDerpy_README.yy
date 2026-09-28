@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"v2",
+  "%Name":"NOTE_LerpyDerpy_README",
+  "name":"NOTE_LerpyDerpy_README",
+  "parent":{
+    "name":"LerpyDerpy",
+    "path":"folders/LerpyDerpy.yy",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

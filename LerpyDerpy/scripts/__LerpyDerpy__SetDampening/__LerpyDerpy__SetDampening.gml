@@ -1,7 +1,7 @@
 
 
 /**
-* Set the dampening rate.
+* Set the default dampening rate for group (applied to new attachments).
 * 
 * @context LerpyDerpy
 * @param {Real} _dampening

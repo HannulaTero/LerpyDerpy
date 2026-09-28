@@ -1,7 +1,7 @@
 
 
 /**
-* Set the acceleration rate.
+* Set the default acceleration rate (applied to new attachments).
 * 
 * @context LerpyDerpy
 * @param {Real} _acceleration

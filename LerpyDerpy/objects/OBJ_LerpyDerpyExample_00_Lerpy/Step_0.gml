@@ -2,6 +2,7 @@
 
 
 // Upate the lerpers to target positions.
+// You can chain values, and update immediately.
 self.xlerp.SetTarget(mouse_x + 64).Update();
 self.ylerp.SetTarget(mouse_y + 64).Update();
 

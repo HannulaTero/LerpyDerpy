@@ -9,10 +9,16 @@
 */ 
 function __LerpyDerpy__Clear()
 {
-  array_resize(self.dataVector, 0);
-  array_resize(self.mappingIndexes, 0);
-  array_resize(self.mappingInverse, 0);
-  self.dataUsedCapacity = 0; 
+  // Detach all first.
+  struct_foreach(self.lerpers, function(_key, _lerper)
+  {
+    _lerper.Detach();
+  });
+  
+  
+  // Make clean container.
+  delete self.lerpers;
+  self.lerpers = { };
   return self;
 }
 

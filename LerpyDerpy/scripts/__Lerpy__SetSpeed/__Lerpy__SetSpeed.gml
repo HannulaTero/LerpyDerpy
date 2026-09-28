@@ -6,7 +6,7 @@
 * 
 * @context Lerpy
 * @param {Real} _offset
-* @returns {Struct.Lerp}
+* @returns {Struct.Lerpy}
 */
 function __Lerpy__SetSpeed(_offset=0)
 {

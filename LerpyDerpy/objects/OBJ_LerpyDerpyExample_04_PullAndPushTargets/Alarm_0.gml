@@ -3,6 +3,8 @@ alarm[0] = irandom_range(30, 180);
 
 
 // Get target values to fields.
+// This ensures the relative changes 
+// are not made into mid-position, but into target position.
 self.lerpyDerpy.PullTargets();
 
 
